@@ -14,7 +14,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        personal: '#55af90',
+        personal: '#256F5C',
+        personal1: '#2B4970',
+        personal2: '#AA7F39',
+        personal3: '#AA6339',
+      },
+      height: {
+        'custom': '88.2vh'
       }
     },
   },
