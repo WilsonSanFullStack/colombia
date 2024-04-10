@@ -32,34 +32,49 @@ declare interface Country {
   borders: Borders;
   flags: Flags;
 }
-
+declare interface Estrofas {
+  coro: string;
+  estrofa1: string;
+  estrofa2: string;
+  estrofa3: string;
+  estrofa4: string;
+  estrofa5: string;
+  estrofa6: string;
+  estrofa7: string;
+  estrofa8: string;
+  estrofa9: string;
+  estrofa10: string;
+  estrofa11: string;
+}
+declare interface Noticia {
+  autor: string;
+  enviadoPor: string;
+  articulo: string;
+  estrofa: string;
+  continuacion: string;
+}
 declare interface Himno {
-  estrofas: {
-    [key: string]: string;
-  };
+  estrofas: Estrofas;
   autor: string;
   año: string;
   genero: string;
   historia: string;
-  noticia: {
-    [key: string]: string;
-  };
+  noticia: Noticia;
   fuente: string;
 }
-declare type Primera = string;
 declare interface Regulacionyuso {
   descripcion: string;
-  primera: Primera;
-  segunda: Primera;
-  tercera: Primera;
-  cuarta: Primera;
-  quita: Primera;
+  primera: string;
+  segunda: string;
+  tercera: string;
+  cuarta: string;
+  quita: string;
 }
 declare interface Elementos {
   descripcion: string;
-  primera: Primera;
-  segunda: Primera;
-  tercera: Primera;
+  primera: string;
+  segunda: string;
+  tercera: string;
 }
 declare interface Artículo365 {
   titulo: string;
@@ -67,7 +82,6 @@ declare interface Artículo365 {
   segunda: string;
   tercera: string;
 }
-
 declare interface Artículo366 {
   titulo: string;
   a: string;
@@ -82,7 +96,7 @@ declare interface Artículo366 {
 declare interface Descripcion {
   descripcion: string;
   artículo365: Artículo365;
-  artículo366: Artículo366
+  artículo366: Artículo366;
 }
 declare interface Escudo {
   escudoArmas: string;

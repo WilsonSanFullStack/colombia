@@ -10,6 +10,7 @@ import { BiLogoGmail } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
 import { IoReader } from "react-icons/io5";
+import NavBar from "./components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,36 +28,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased bg-gray-950 text-gray-300 mt-10 mb-24`}>
          {/* creacion de la navbar */}
-      <nav className="px-10 bg-slate-900 fixed top-0 min-w-full font-bold">
-        <ul className="flex list-none justify-between items-center h-9 capitalize">
-          <li className="inline-block items-center">
-            <Link href="/home">Home</Link>
-          </li>
-          <li className="inline-block items-center">
-            <Link href="/himno">simbolos patrios</Link>
-          </li>
-          <li className="inline-block items-center">
-            <Link href="/departament">departament</Link>
-          </li>
-          <li className="inline-block items-center">
-            <Link href="/departament">municipalities</Link>
-          </li>
-          <li className="inline-block items-center">
-            <Link href="/departament">presidents</Link>
-          </li>
-          <li className="inline-block items-center">
-            <Link href="/departament">constitution</Link>
-          </li>
-        </ul>
-      </nav>
-      
+      <NavBar />
       {children}
-      <div className="px-10 bg-slate-500 fixed bottom-0 h-20 min-w-full font-bold flex justify-center items-center">
+      <div className="px-2 bg-slate-500 fixed bottom-0 h-20 min-w-full font-bold flex justify-center items-center">
       <Image
         src="/logo circulo limpio.png"
         alt="logo"
-        width={120}
-        height={100}
+        width={90}
+        height={90}
         className="my-0.5"
       />
       <div>
