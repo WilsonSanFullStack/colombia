@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased bg-gray-950 text-gray-300 mt-10 mb-20`}>
+      <body className={`${inter.className} antialiased bg-gray-950 text-gray-300 mt-10 mb-24`}>
          {/* creacion de la navbar */}
       <nav className="px-10 bg-slate-900 fixed top-0 min-w-full font-bold">
         <ul className="flex list-none justify-between items-center h-9 capitalize">
@@ -33,7 +33,7 @@ export default function RootLayout({
             <Link href="/home">Home</Link>
           </li>
           <li className="inline-block items-center">
-            <Link href="/himno">himno</Link>
+            <Link href="/himno">simbolos patrios</Link>
           </li>
           <li className="inline-block items-center">
             <Link href="/departament">departament</Link>
