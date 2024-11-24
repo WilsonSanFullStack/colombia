@@ -58,7 +58,7 @@ export default function NavBar() {
             2xl:flex 2xl:list-none 2xl:justify-between 2xl:items-center 2xl:h-9 2xl:capitalize"
             >
               <li className="inline-block items-center">
-                <Link href="/home" onClick={handleNavLinkClick}>
+                <Link href="/" onClick={handleNavLinkClick}>
                   Home
                 </Link>
               </li>

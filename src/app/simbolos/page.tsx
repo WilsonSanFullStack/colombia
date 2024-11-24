@@ -26,7 +26,9 @@ export default function page() {
         <Flor />
       </div>
       <div>
-        <h1>fuente principal de informacion fue la pagina</h1> <Link href={fuentePrincipal}>{fuentePrincipal}</Link>
+      <p className="text-xl font-bold text-yellow-500 m-2">
+      fuente principal de informacion fue la pagina  <Link href={fuentePrincipal}>{fuentePrincipal}</Link>
+      </p>
       </div>
     </main>
   );

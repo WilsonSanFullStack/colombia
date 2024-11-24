@@ -9,8 +9,19 @@ Es un símbolo nacional de Argentina, Bolivia, Chile, Colombia, Ecuador, Perú y
   Wikipedia, La enciclopedia libre`,
 };
 
-export default function Ave () {
+export default function Ave() {
   return (
-    <main id="ave">soy el ave</main>
-  )
+    <main id="ave">
+      <div>
+        <h1 className=" text-4xl text-blue-700 font-bold uppercase text-center">
+          Ave Nacional
+        </h1>
+        <p className="mx-4 text-justify text-xl">{aveColombia.descripcion}</p>
+        <img src={aveColombia.image} alt={aveColombia.image} className="mx-auto my-4" />
+        <p className="text-xl font-bold text-red-500 m-2">
+        fuente: {aveColombia.fuente}
+      </p>
+      </div>
+    </main>
+  );
 }

@@ -8,8 +8,19 @@ const florColombia: Ave = {
   fuente: `Presidencia de la república de Colombia`,
 };
 
-export default function Flor () {
+export default function Flor() {
   return (
-    <main id="flor">soy la flor</main>
-  )
+    <main id="flor">
+      <div>
+        <h1 className="text-4xl text-blue-700 font-bold uppercase text-center">
+          flor nacional
+        </h1>
+        <p className="mx-4 text-justify text-xl">{florColombia.descripcion}</p>
+        <img src={florColombia.image} alt={florColombia.image} className="mx-auto my-4"/>
+        <p className="text-xl font-bold text-red-500 m-2">
+          fuente: {florColombia.fuente}
+        </p>
+      </div>
+    </main>
+  );
 }

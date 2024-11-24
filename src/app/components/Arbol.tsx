@@ -34,8 +34,80 @@ En una documentada exposición de motivos, Dugand destacó la palma de cera como
   },
 };
 
-export default function Arbol () {
+export default function Arbol() {
   return (
-    <main id="arbol">soy el arbol</main>
-  )
+    <main id="arbol">
+      <h1 className="text-4xl text-blue-700 font-bold uppercase text-center">
+        Arbol
+      </h1>
+      <h3 className="text-xl text-blue-700 font-bold uppercase text-center">historia</h3>
+      <p className="mx-4 text-justify text-xl">{arbolColombia.descripcion}</p>
+      <img src={arbolColombia.image} alt={arbolColombia.image}
+      className="mx-auto my-4" />
+      <section>
+        <section>
+          <p className="mx-4 text-justify text-xl">{arbolColombia.palma.descripcion}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">Nombre: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.nombre} </p>
+        </section>
+        <section>
+          <h4  className="text-center text-xl text-blue-700 font-bold uppercase">Familia: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.familia} </p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">forma de la copa:</h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.formaCopa}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">color: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.color}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">porte: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.porte}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">crecimiento: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.crecimiento}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">tronco: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.tronco}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">follaje: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.follaje}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">corteza: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.corteza}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">hoja: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.hoja}</p>
+        </section>
+        <section>
+          <h4 className="text-center text-xl text-blue-700 font-bold uppercase">flores: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.flores}</p>
+        </section>
+        <section>
+          <h4 className="text-xl text-blue-700 font-bold uppercase text-center">fruto: </h4>
+          <p className="mx-4 text-center text-xl">{arbolColombia.palma.fruto}</p>
+        </section>
+        <section>
+          <img
+            src={arbolColombia.palma.image}
+            alt={arbolColombia.palma.image}
+            className="mx-auto my-4"
+          />
+        </section>
+        <section>
+        <p className="text-xl font-bold text-red-500 m-2">
+        fuente: {arbolColombia.palma.fuente}
+      </p></section>
+      </section>
+    </main>
+  );
 }
