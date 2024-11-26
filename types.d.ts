@@ -1,14 +1,10 @@
-declare interface Flags {
-  urls: string[];
-}
+declare type Flags  = string[];
 
-declare interface Borders {
-  borders: string[];
-}
+declare type Borders = string[];
 
-declare interface Languages {
-  languages: string[];
-}
+
+declare type Languages = string[];
+
 
 declare interface Country {
   id: number;
@@ -167,3 +163,16 @@ declare interface Ave {
   image: string;
   fuente: string;
 }
+
+declare interface Departments {
+  id: number
+  name: string
+}
+declare interface Region {
+  id: number,
+  name: string,
+  description: string,
+  departments: null | Departments[]
+}
+declare type Regions = Region[]
+

@@ -96,8 +96,13 @@ export default function NavBar() {
                 )}
               </li>
               <li className="inline-block items-center">
-                <Link href="/departament" onClick={handleNavLinkClick}>
-                  departament
+                <Link href="/regions" onClick={handleNavLinkClick}>
+                  region
+                </Link>
+              </li>
+              <li className="inline-block items-center">
+                <Link href="/department" onClick={handleNavLinkClick}>
+                  department
                 </Link>
               </li>
               <li className="inline-block items-center">

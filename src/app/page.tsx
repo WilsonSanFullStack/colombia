@@ -2,8 +2,8 @@
 async function getData() {
   try {
     const res = await fetch(
-      `${process.env.URL_API_COLOMBIA}/country/colombia`
-      // { cache: "no-store" }
+      `${process.env.URL_API_COLOMBIA}/country/colombia`,
+      { cache: "no-store" }
     );
     const data = await res.json();
     return data;
@@ -13,7 +13,7 @@ async function getData() {
 }
 export default async function Home() {
   const colombia: Country = await getData();
-  console.log(colombia);
+  // console.log(colombia);
   return (
     <main className="text-center p-2 m-2">
       <h1 className="text-4xl font-bold uppercase">{colombia.name}</h1>
@@ -25,12 +25,12 @@ export default async function Home() {
       <div className="text-xl">
         Lenguajes: {" "}
         {colombia.languages && colombia.languages.map((x)=> {
-          return (<lo>
+          return (<ol>
 
             <li>
               {x}
             </li>
-          </lo>)
+          </ol>)
         })}
       </div>
       <p className="text-xl">
