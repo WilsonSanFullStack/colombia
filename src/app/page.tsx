@@ -26,7 +26,6 @@ export default async function Home() {
         Lenguajes: {" "}
         {colombia.languages && colombia.languages.map((x)=> {
           return (<ol>
-
             <li>
               {x}
             </li>

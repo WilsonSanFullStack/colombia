@@ -1,10 +1,8 @@
-declare type Flags  = string[];
+declare type Flags = string[];
 
 declare type Borders = string[];
 
-
 declare type Languages = string[];
-
 
 declare interface Country {
   id: number;
@@ -165,14 +163,55 @@ declare interface Ave {
 }
 
 declare interface Departments {
-  id: number
-  name: string
+  id: number | null;
+  name: string | null;
 }
 declare interface Region {
-  id: number,
-  name: string,
-  description: string,
-  departments: null | Departments[]
+  id: number;
+  name: string;
+  description: string;
+  departments: null | Departments[];
 }
-declare type Regions = Region[]
+declare type Regions = Region[];
 
+declare interface Capital {
+  id: number;
+  name: string;
+  description: string;
+  surface: number;
+  population: number;
+  postalCode: string;
+  departmentId: number;
+  department: null;
+  touristAttractions: null;
+  presidents: null;
+  indegenousReservations: null;
+  airports: null;
+  radios: null;
+}
+
+declare interface Cities {
+  id: number;
+  name: string;
+}
+
+declare interface Department {
+  id: number;
+  name: string;
+  description: string;
+  cityCapitalId: number;
+  municipalities: number;
+  surface: number;
+  population: number;
+  phonePrefix: string;
+  countryId: number;
+  cityCapital: Capital;
+  country: null;
+  cities: null | Cities[];
+  regionId: number;
+  region: null;
+  naturalAreas: null;
+  maps: null;
+  indigenousReservations: null;
+  airports: null;
+}
